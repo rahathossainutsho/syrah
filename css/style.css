@@ -1,0 +1,4319 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+a,a:hover,a:focus{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,li,ol{
+    list-style: none;
+    display: inline-block;
+}
+
+@font-face{
+    src:url(../fonts/adine-kirnberg.regular.ttf);
+    font-family:adine-kirnberg;
+}
+
+/*===================================================
+                manubar part css start
+===================================================*/
+
+#manubar{
+    background: transparent;
+    width: 100%;
+    padding-top:40px;
+    padding-bottom: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+#manubar .manu{
+    display: flex;
+    align-items: center;
+}
+
+#manubar .manu .logo{
+    width: 20%;
+}
+
+#manubar .manu .logo img{
+    width: 43%;
+}
+
+#manubar .manu .manuiteam{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#manubar .manu .manuiteam ul li a{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 52px;
+    font-family: 'Arimo', sans-serif;
+    transition: .4s;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: right;
+    position: relative;
+}
+
+#manubar .manu .manuiteam ul li a:before{
+    position: absolute;
+    top:-10px;
+    left: 0;
+    content: '';
+    height: 1px;
+    width:0;
+    transition: .4s;
+    background:#abb89e;
+}
+
+#manubar .manu .manuiteam ul li a:after{
+    position: absolute;
+    bottom:-10px;
+    right: 0;
+    content: '';
+    height: 1px;
+    width:0;
+    transition: .4s;
+    background:#abb89e;
+}
+
+#manubar .manu .manuiteam ul li a:hover{
+    color: #abb89e;
+}
+
+#manubar .manu .manuiteam ul li a:hover:before{
+    width: 100%;
+}
+
+#manubar .manu .manuiteam ul li a:hover:after{
+    width: 100%;
+}
+
+#manubar .manu .manuiteam ul li .index{
+    color: #abb89e;
+}
+
+#manubar .manu .manuiteam ul li .index:after{
+    width: 100%;
+}
+
+#manubar .manu .manuiteam ul li .index:before{
+    width: 100%;
+}
+
+/*===================================================
+                manubar part css end
+===================================================*/
+
+/*===================================================
+                banner part css start
+===================================================*/
+
+#banner{
+    background: url(../Images/banner.png) no-repeat center;
+    background-size: cover;
+    padding-top: 203px;
+    padding-bottom: 135px;
+    margin-bottom: 230px;
+}
+
+#banner .ban{
+    position: relative;
+}
+
+#banner .text{
+    width: 50%;
+}
+
+#banner .text h2{
+    font-family:adine-kirnberg;
+    text-align: left;
+    text-transform: capitalize;
+    color: #fff;
+    font-size:60px;
+    margin-bottom: -65px;
+    font-weight: 400;
+}
+
+#banner .text h1{
+    font-family: 'Abril Fatface', cursive;
+    text-align: left;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #fff;
+    font-size: 97px;
+    margin-bottom: 10px;
+}
+
+#banner .text h3{
+    font-family: 'Arimo', sans-serif;
+    text-align: left;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing:9px;
+    margin-bottom: 30px;
+}
+
+#banner .text p{
+    font-family: 'Arimo', sans-serif;
+    text-align: left;
+    font-weight: 400;
+    line-height: 26px;
+    color: #e7e7e7;
+    font-size: 16px;
+    width:450px;
+    margin-bottom: 60px;
+}
+
+#banner .text a{
+    text-transform: capitalize;
+    transition: .4s;
+    background: #b7c5a9;
+    padding: 20px 30px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #eeefed;
+    font-family: 'Arimo', sans-serif;
+    position: relative;
+}
+
+#banner .text a:after{
+    position: absolute;
+    top: 50%;
+    right:-28%;
+    content: '';
+    height: 1px;
+    transform: translateY(-50%);
+    background: #ffffff;
+    width: 40%;
+    transition: .4s;
+}
+
+#banner .text a:hover{
+    padding-right: 45px;
+}
+
+#banner .text a:hover:after{
+    width: 45%;
+    right: -32%;
+}
+
+#banner .img{
+    position: absolute;
+    right: -105px;
+    top:-15%;
+}
+
+/*===================================================
+                banner part css end
+===================================================*/
+
+/*===================================================
+                our story part css start
+===================================================*/
+
+#our-story-part .story{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-bottom: 230px;
+}
+
+#our-story-part .image{
+    position: absolute;
+    top: -50px;
+    left:-80px;
+}
+
+#our-story-part .text{
+    width: 50%;
+}
+
+#our-story-part .text h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 43px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #e4d2b9;
+    text-align: left;
+    position: relative;
+    margin-bottom: 38px;
+    display: inline-block;
+    padding-right: 30px;
+}
+
+#our-story-part .text h1:after{
+    position: absolute;
+    top: 50%;
+    left:100%;
+    content: '';
+    background: #e4d2b9;
+    height: 1px;
+    width: 195px;
+    transform: translateY(-50%);
+}
+
+#our-story-part .text p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    text-align: left;
+    line-height: 25px;
+}
+
+#our-story-part .text .up{
+    margin-bottom: 40px;
+}
+
+#our-story-part .text a{
+    text-transform: capitalize;
+    transition: .4s;
+    background: #e4d2b9;
+    padding: 20px 30px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #eeefed;
+    font-family: 'Arimo', sans-serif;
+    position: relative;
+    margin-top: 40px;
+}
+
+#our-story-part .text a:after{
+    position: absolute;
+    top: 50%;
+    right:-28%;
+    content: '';
+    height: 1px;
+    transform: translateY(-50%);
+    background: #a5947d;
+    width: 40%;
+    transition: .4s;
+}
+
+#our-story-part .text a:hover{
+    padding-right: 45px;
+}
+
+#our-story-part .text a:hover:after{
+    width: 45%;
+    right: -32%;
+}
+
+
+/*===================================================
+                our story part css end
+===================================================*/
+
+/*===================================================
+                our products part css start
+===================================================*/
+
+#our-products-part{
+    margin-bottom:345px;
+}
+
+#our-products-part h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 43px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #e4d2b9;
+    text-align: center;
+    position: relative;
+    margin-bottom: 77px;
+    display: inline-block;
+    padding: 0 35px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#our-products-part h1:after{
+    position: absolute;
+    top: 50%;
+    left:100%;
+    content: '';
+    background: #e4d2b9;
+    height: 1px;
+    width:150px;
+    transform: translateY(-50%);
+}
+
+#our-products-part h1:before{
+    position: absolute;
+    top: 50%;
+    right:100%;
+    content: '';
+    background: #e4d2b9;
+    height: 1px;
+    width:150px;
+    transform: translateY(-50%);
+}
+
+#our-products-part .products{
+    display: flex;
+    justify-content: space-between;
+}
+
+#our-products-part .products .show{
+    height: 405px;
+    width: 264px;
+    background: #ffffff;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 80px -14px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 80px -14px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 80px -14px rgba(0,0,0,0.2);
+    transition: .4s;
+}
+
+#our-products-part .products .show .border{
+    width: 245px;
+    height: 690px;
+    border: 1px solid #d1d4cc;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    transition: .4s;
+    opacity: .5;
+}
+
+#our-products-part .products .show .design{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#our-products-part .products .show .product{
+    position: absolute;
+    top:115px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#our-products-part .products .show .design img{
+    opacity: .3;
+    transition: .4s;
+}
+
+#our-products-part .products .show .product p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #444444;
+    text-align: center; 
+    margin-top: 20px;
+}
+
+#our-products-part .products .show .product .price{
+    margin-top: 10px;
+}
+
+#our-products-part .products .show:hover{
+    cursor: pointer;
+}
+
+#our-products-part .products .show:hover .design img{
+    opacity: 1;
+}
+
+#our-products-part .products .show:hover .border{
+    opacity: 1;
+}
+
+/*===================================================
+                our products part css end
+===================================================*/
+
+/*===================================================
+                upcomig events part css start
+===================================================*/
+
+#upcoming-events-part{
+    background: url(../Images/upcoming-banner.png) no-repeat center;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    margin-bottom: 97px;
+}
+
+#upcoming-events-part h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 43px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #e4d2b9;
+    text-align: center;
+    position: relative;
+    margin-bottom:68px;
+    display: inline-block;
+    padding: 0 35px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#upcoming-events-part h1:after{
+    position: absolute;
+    top: 50%;
+    left:100%;
+    content: '';
+    background: #e4d2b9;
+    height: 1px;
+    width:150px;
+    transform: translateY(-50%);
+}
+
+#upcoming-events-part h1:before{
+    position: absolute;
+    top: 50%;
+    right:100%;
+    content: '';
+    background: #e4d2b9;
+    height: 1px;
+    width:150px;
+    transform: translateY(-50%);
+}
+
+#upcoming-events-part .iteams{
+    display: flex;
+    justify-content: space-between;
+    width: 850px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#upcoming-events-part .iteams .option{
+    height: 470px;
+    width: 264px;
+    background: #ffffff;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 80px -14px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 80px -14px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 80px -14px rgba(0,0,0,0.2);
+}
+
+#upcoming-events-part .iteams .option .border{
+    width: 245px;
+    height:507px;
+    border: 1px solid #e5e5e5;
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+#upcoming-events-part .iteams .option .design{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#upcoming-events-part .iteams .option .design img{
+    opacity: .4;
+}
+
+#upcoming-events-part .iteams .option .information{
+    position: absolute;
+    top: 98px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#upcoming-events-part .iteams .option .information .date p{
+    font-family: 'Arimo', sans-serif;
+    font-size:72px;
+    font-weight: 400;
+    color: #444444;
+    text-align: center; 
+}
+
+#upcoming-events-part .iteams .option .information .date .month{
+    font-family: 'Great Vibes', cursive;
+    font-weight: 300;
+    font-size:32px;
+    position: relative;
+} 
+
+#upcoming-events-part .iteams .option .information .date .month:after{
+    width:48px;
+    height: 1px;
+    content: '';
+    position: absolute;
+    bottom:-10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e4d2b9;
+}
+
+#upcoming-events-part .iteams .option .information p{
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    color: #444444;
+    text-align: center; 
+}
+
+#upcoming-events-part .iteams .option .information .time{
+    font-size:20px;
+    margin-top: 25px;
+    margin-bottom:45px;
+    text-transform: capitalize;
+}
+
+#upcoming-events-part .iteams .option .information .day{
+    font-size:24px;
+    text-transform: capitalize;
+    color: #222222;
+    width: 245px;
+}
+
+#upcoming-events-part .iteams .option .information .last{
+    margin-bottom:30px;
+}
+
+#upcoming-events-part .iteams .option .information .price{
+    font-size:30px;
+}
+
+/*===================================================
+                upcomig events part css end
+===================================================*/
+
+/*===================================================
+                deal of week part css start
+===================================================*/
+
+#deal-of-week{
+    margin-bottom:110px;
+}
+
+#deal-of-week .week{
+    display: flex;
+}
+
+#deal-of-week .image{
+    width:42%;
+    background: rgba(0, 0, 0,.0);
+}
+
+#deal-of-week .text{
+    width:58%;
+}
+
+#deal-of-week .text h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 43px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #e4d2b9;
+    text-align: left;
+    position: relative;
+    margin-bottom: 38px;
+    display: inline-block;
+    padding-right: 30px;
+}
+
+#deal-of-week .text h1:after{
+    position: absolute;
+    top: 50%;
+    left:100%;
+    content: '';
+    background: #e4d2b9;
+    height: 1px;
+    width:150px;
+    transform: translateY(-50%);
+}
+
+#deal-of-week .text p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    text-align: left;
+    line-height: 25px;
+}
+
+#deal-of-week .text .down{
+    margin-bottom:73px;
+    margin-top: 40px;
+}
+
+#deal-of-week .text .timer{
+    width: 99%;
+    height:320px;
+    background: #ffffff;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 85px -14px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 85px -14px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 85px -14px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#deal-of-week .text .timer:before{
+    width:120%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    background:#f0f0f0;
+    content: '';
+}
+
+#deal-of-week .text .timer:after{
+    width:61%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) rotate(90deg);
+    background: #f0f0f0;
+    content: '';
+}
+
+#deal-of-week .text .timer .time{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#deal-of-week .text .timer p{
+    font-family: 'Abril Fatface', cursive;
+    font-size:46px;
+    font-weight: 400;
+    color: #444444;
+    text-align:center;
+    text-transform: capitalize;
+}
+
+#deal-of-week .text .timer .time span{
+    font-size:24px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    color: #444444;
+    text-align:center;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+
+/*===================================================
+                deal of week part css end
+===================================================*/
+
+/*===================================================
+                latest updates part css start
+===================================================*/
+
+#latest-update{
+    background: url(../Images/latest-update-part-banner.png) no-repeat center;
+    background-size: cover;
+    padding:50px 0;
+}
+
+#latest-update .updates{
+    display: flex;
+    align-items: center;
+}
+
+#latest-update .info{
+    width: 390px;
+}
+
+#latest-update .info h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 43px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #e4d2b9;
+    text-align: left;
+    position: relative;
+    margin-bottom:42px;
+    display: inline-block;
+    padding-right: 30px;
+}
+
+#latest-update .info h1:after{
+    position: absolute;
+    top: 50%;
+    left:100%;
+    content: '';
+    background: #e4d2b9;
+    height: 1px;
+    width:107px;
+    transform: translateY(-50%);
+}
+
+#latest-update .info p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    text-align: left;
+    line-height: 25px;
+    width:350px;
+    margin-bottom: 40px;
+}
+
+#latest-update .info .icon{
+    display: flex;
+}
+
+#latest-update .prev{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 67px;
+    border: 1px solid #b7c5a9;
+    color: #b7c5a9;
+    transition: .4s;
+    font-size: 20px;
+    position:absolute;
+    top: 66%;
+    left: -390px;
+}
+
+#latest-update .prev:hover{
+    background: #b7c5a9;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+#latest-update .next{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 67px;
+    border: 1px solid #b7c5a9;
+    color: #b7c5a9;
+    transition: .4s;
+    font-size: 20px;
+    position:absolute;
+    top: 66%;
+    left: -305px;
+}
+
+#latest-update .next:hover{
+    background: #b7c5a9;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+#latest-update .update{
+    width: 750px;
+    display: flex;
+    z-index: 9999;
+}
+
+#latest-update .slick-list{
+    margin-right: -26px;
+    padding: 30px 0;
+}
+
+#latest-update .update .iteam{
+    width: 362px;
+    height: 540px;
+    background: #ffffff;
+    position: relative;
+    margin-right: 26px;
+    outline: 0;
+}
+
+#latest-update .update .iteam .border-shap{
+    height: 582px;
+    width: 340px;
+    border: 1px solid #d6d6d6;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+#latest-update .update .iteam .photo{
+    width: 100%;
+    height: 263px;
+}
+
+#latest-update .update .iteam .photo img{
+    width: 100%;
+    height: 100%;
+}
+
+#latest-update .update .iteam .post-time{
+    height: 50px;
+    width: 302px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #b7c5a9;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius:50px;
+    border-top-right-radius:50px;
+    border-bottom-right-radius:50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: -25px;
+    -webkit-box-shadow: 0px 18px 18px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 18px 18px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 18px 18px 0px rgba(0,0,0,0.05);
+}
+
+#latest-update .update .iteam .post-time p{
+    font-family: 'Arimo', sans-serif;
+    font-size:13px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align:left;
+}
+
+#latest-update .update .iteam .post-time .up{
+    margin-right: 15px;
+}
+
+#latest-update .update .iteam h1{
+    font-family: 'Arimo', sans-serif;
+    font-size:24px;
+    font-weight: 400;
+    color: #222222;
+    text-align:left;
+    width: 305px;
+    margin-left: 30px;
+    margin-top:20px;
+    margin-bottom: 30px;
+}
+
+#latest-update .update .iteam .details{
+    font-family: 'Arimo', sans-serif;
+    font-size:16px;
+    font-weight: 400;
+    color: #222222;
+    text-align:left;
+    width: 305px;
+    margin-left: 30px;
+    margin-bottom:18px;
+    line-height: 25px;
+}
+
+#latest-update .update .iteam a{
+    font-family: 'Arimo', sans-serif;
+    font-size:20px;
+    font-weight: 400;
+    color: #222222;
+    text-align:left;
+    text-transform: capitalize;
+    margin-left: 30px;
+    transition: .4s;
+}
+
+#latest-update .update .iteam a:hover{
+    cursor: pointer;
+}
+
+#latest-update .update .iteam .s{
+    background: #e4d2b9;
+}
+
+/*===================================================
+                latest updates part css end
+===================================================*/
+
+/*===================================================
+                footer part css start
+===================================================*/
+
+#footer{
+    background: url(../Images/footer-banner.png) no-repeat center;
+    background-size: cover;
+    padding-top:60px;
+}
+
+#footer .logo{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+}
+
+#footer .information{
+    height: 458px;
+    width: 100%;
+    border-top: 1px solid #161a1e;
+    border-bottom: 1px solid #161a1e;
+    display: flex;
+}
+
+#footer .contact{
+    width: 390px;
+    height: 100%;
+}
+
+#footer .contact .info{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 33.33%;
+}
+
+#footer .contact .info:after{
+    width: 360px;
+    height: 1px;
+    content: '';
+    position: absolute;
+    bottom:0px;
+    left: 0;
+    background: #161a1e;
+}
+
+#footer .contact .last:after{
+    height: 0;
+}
+
+#footer .contact .info i{
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 68px;
+    background: #e3d1b8;
+    color: #ffffff;
+    font-size: 21px;
+    margin-right: 30px;
+}
+
+#footer .contact .info .text p{
+    font-family: 'Arimo', sans-serif;
+    font-size:18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align:left;
+}
+
+#footer .contact .info .text .up{
+    margin-bottom: 10px;
+}
+
+#footer .information .links{
+    height: 100%;
+    width: 290px;
+}
+
+#footer .information .links a{
+    font-family: 'Arimo', sans-serif;
+    font-size:18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align:left;
+    transition: .4s;
+    margin-bottom: 40px;
+    margin-left: 47px;
+    display: block;
+}
+
+#footer .information .links .top{
+    margin-top: 58px;
+    margin-left:62px;
+}
+
+#footer .information .links a:hover{
+    margin-left:62px;
+}
+
+#footer .information .map{
+    width: 460px;
+    height: 100%;
+}
+
+#footer .information .map form{
+    margin-top: 60px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 28px;
+}
+
+#footer .information .map form input{
+    width: 358px;
+    height:70px;
+    border: 1px solid #444;
+    background: #1d2228;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+    outline: 0;
+}
+
+#footer .information .map form input::placeholder{
+    font-family: 'Arimo', sans-serif;
+    font-size:16px;
+    font-weight: 400;
+    color: #444444;
+}
+
+#footer .information .map form button{
+    font-family: 'Arimo', sans-serif;
+    font-size:20px;
+    font-weight: 400;
+    color: #444444;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 147px;
+    background: #e3d1b8;
+    transition: .4s;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: capitalize;
+    border: 0;
+}
+
+#footer .information .map form button:hover{
+    cursor: pointer;
+}
+
+#footer .information .map .map-img{
+    width: 450px;
+    height:235px;
+    border: 5px solid #171a1e;
+    transition: .4s;
+}
+
+#footer .information .map .map-img img{
+    width: 100%;
+    height: 100%;
+}
+
+#footer .information .map .map-img:hover{
+    cursor: pointer;
+}
+
+#footer .designer-and-icon{
+    display: flex;
+    align-items: center;
+}
+
+#footer .designer-and-icon .designer{
+    width: 50%;
+}
+
+#footer .designer-and-icon .designer p{
+    font-family: 'Arimo', sans-serif;
+    font-size:16px;
+    font-weight: 400;
+    color: #444444;
+}
+
+#footer .designer-and-icon .designer span{
+    color: #fff;
+}
+
+#footer .designer-and-icon .icon{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#footer .designer-and-icon .icon a i{
+    height: 74px;
+    line-height: 74px;
+    text-align: center;
+    color: #ffffff;
+    border-left:1px solid #161a1e;
+    width: 50px;
+    transition: .4s;
+    font-size: 18px;
+}
+
+#footer .designer-and-icon .icon .last{
+    border-right:1px solid #161a1e;
+}
+
+#footer .designer-and-icon .icon a i:hover{
+    background: #e4d2b9;
+    border-color: #e4d2b9;
+    color: #444444;
+}
+
+/*===================================================
+                footer part css end
+===================================================*/
+
+
+
+
+/*===================================================
+                  index css start
+===================================================*/
+
+
+
+
+
+/*===================================================
+              page-2 our story css start
+===================================================*/
+
+
+
+
+
+
+
+
+/*===================================================
+                manubar part css start
+===================================================*/
+
+#story-manubar{
+    background:url(../Images/banner.png) no-repeat center;
+    background-size:cover;
+    padding-top: 40px;
+    padding-bottom:115px;
+    margin-bottom: 175px;
+}
+
+#story-manubar .manu{
+    display: flex;
+    align-items: center;
+}
+
+#story-manubar .manu .logo{
+    width: 20%
+}
+
+#story-manubar .manu .logo img{
+    width:43%;
+}
+
+#story-manubar .manu .manuiteam{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#story-manubar .manu .manuiteam ul li a{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 52px;
+    font-family: 'Arimo', sans-serif;
+    transition: .4s;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: right;
+    position: relative;
+}
+
+#story-manubar .manu .manuiteam ul li a:before{
+    position: absolute;
+    top:-10px;
+    left: 0;
+    content: '';
+    height: 1px;
+    width:0;
+    transition: .4s;
+    background:#abb89e;
+}
+
+#story-manubar .manu .manuiteam ul li a:after{
+    position: absolute;
+    bottom:-10px;
+    right: 0;
+    content: '';
+    height: 1px;
+    width:0;
+    transition: .4s;
+    background:#abb89e;
+}
+
+#story-manubar .manu .manuiteam ul li a:hover{
+    color: #abb89e;
+}
+
+#story-manubar .manu .manuiteam ul li a:hover:before{
+    width: 100%;
+}
+
+#story-manubar .manu .manuiteam ul li a:hover:after{
+    width: 100%;
+}
+
+#story-manubar .manu .manuiteam ul li .story{
+    color: #abb89e;
+}
+
+#story-manubar .manu .manuiteam ul li .story:after{
+    width: 100%;
+}
+
+#story-manubar .manu .manuiteam ul li .story:before{
+    width: 100%;
+}
+
+/*===================================================
+                manubar part css end
+===================================================*/
+
+/*===================================================
+                banner part css start
+===================================================*/
+
+#story-banner .sto{
+    padding: 46px 0;
+    position: absolute;
+    top:115px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 5px 73px 15px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 5px 73px 15px rgba(0,0,0,0.05);
+    box-shadow: 0px 5px 73px 15px rgba(0,0,0,0.05);
+    background: url(../Images/title-background.png) no-repeat center;
+}
+
+#story-banner .sto .text h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #c9b598;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+#story-banner .text .ancor{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#story-banner .text .ancor a{
+    color: #444444;
+    font-size: 18px;
+    font-family: 'Arimo', sans-serif;
+    transition: .4s;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+}
+
+#story-banner .text .ancor a:after{
+    position: absolute;
+    bottom:2px;
+    content: '';
+    left: 0;
+    height: 1px;
+    width:100%;
+    background:#abb89e;
+    opacity:0;
+}
+
+#story-banner .text .ancor a:hover{
+    cursor: pointer;
+    color: #abb89e;
+    z-index: 9999
+}
+
+#story-banner .text .ancor a:hover:after{
+    opacity:1;
+}
+
+#story-banner .text .ancor .st{
+    color: #abb89e;
+}
+
+#story-banner .text .ancor .st:after{
+    opacity:1;
+}
+
+#story-banner .text .ancor p{
+    font-size: 25px;
+    margin-right:3px;
+    display: inline-block;
+    color: #222222;
+    margin-left: 3px;
+}
+
+/*===================================================
+                banner part css end
+===================================================*/
+
+/*===================================================
+                our story part css start
+===================================================*/
+
+#story-our-story-part .story{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+#story-our-story-part .image{
+    position: absolute;
+    top:0px;
+    left:-80px;
+}
+
+#story-our-story-part .image img{
+    width: 92%;
+    height: 92%;
+}
+
+#story-our-story-part .text{
+    width: 49%;
+}
+
+#story-our-story-part .text h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 43px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #e4d2b9;
+    text-align: left;
+    position: relative;
+    margin-bottom: 30px;
+    display: inline-block;
+    padding-right: 30px;
+}
+
+#story-our-story-part .text h1:after{
+    position: absolute;
+    top: 50%;
+    left:100%;
+    content: '';
+    background: #e4d2b9;
+    height: 1px;
+    width: 115px;
+    transform: translateY(-50%);
+}
+
+#story-our-story-part .text p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    text-align: left;
+    line-height: 25px;
+}
+
+#story-our-story-part .text .up{
+    margin-bottom: 22px;
+}
+
+#story-our-story-part .text .name p{
+    margin-top: 52px;
+    font-size:24px;
+    color: #d3bda0;
+}
+
+#story-our-story-part .text .name span{
+    margin:0 10px;
+    font-size:18px;
+}
+
+/*===================================================
+                our story part css end
+===================================================*/
+
+/*===================================================
+                our achievements part css start
+===================================================*/
+
+#our-achievement{
+   margin-bottom: 61px;
+}
+
+#our-achievement .achieve{
+   display: flex;
+}
+
+#our-achievement .text{
+    width: 55%;
+}
+
+#our-achievement .text .ac{
+    font-family: 'Great Vibes', cursive;
+    font-size: 43px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #e4d2b9;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    padding-right: 30px;
+}
+
+#our-achievement .text .ac:after{
+    position: absolute;
+    top: 50%;
+    left:100%;
+    content: '';
+    background: #e4d2b9;
+    height: 1px;
+    width: 115px;
+    transform: translateY(-50%);
+}
+
+#our-achievement .text .head-d{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    text-align: left;
+    line-height: 25px;
+    width: 620px;
+    margin-bottom: 30px;
+}
+
+#our-achievement .text .review{
+    margin-top: 61px;
+}
+
+#our-achievement .text .review .iteam{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 125px;
+}
+
+#our-achievement .text .review .iteam:after{
+    position: absolute;
+    bottom: -65px;
+    left:0;
+    content: '';
+    background: #e4d2b9;
+    height: 1px;
+    width: 90%;
+}
+
+#our-achievement .text .review .iteam .image{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    position: relative;
+    margin-right:30px;
+}
+
+#our-achievement .text .review .iteam .image .ovl{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .6);
+}
+
+#our-achievement .text .review .iteam .details h1{
+    font-family: 'Arimo', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #222222;
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+#our-achievement .text .review .iteam .details p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    text-align: left;
+    line-height: 25px;
+    width: 420px;
+}
+
+#our-achievement .text .review .down{
+    margin-bottom:0px;
+}
+
+#our-achievement .text .review .down:after{
+    width: 0;
+}
+
+#our-achievement .achieve .product-image{
+    height:810px;
+    margin-top: 30px;
+    margin-left: -10px;
+}
+
+#our-achievement .achieve .product-image img{
+    height:100%;
+}
+
+/*===================================================
+                our achievements part css end
+===================================================*/
+
+/*===================================================
+                footer part css start
+===================================================*/
+
+#story-footer{
+    background: url(../Images/footer-banner.png) no-repeat center;
+    background-size: cover;
+    padding-top:60px;
+}
+
+#story-footer .logo{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+}
+
+#story-footer .information{
+    height: 458px;
+    width: 100%;
+    border-top: 1px solid #161a1e;
+    border-bottom: 1px solid #161a1e;
+    display: flex;
+}
+
+#story-footer .contact{
+    width: 390px;
+    height: 100%;
+}
+
+#story-footer .contact .info{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 33.33%;
+}
+
+#story-footer .contact .info:after{
+    width: 360px;
+    height: 1px;
+    content: '';
+    position: absolute;
+    bottom:0px;
+    left: 0;
+    background: #161a1e;
+}
+
+#story-footer .contact .last:after{
+    height: 0;
+}
+
+#story-footer .contact .info i{
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 68px;
+    background: #e3d1b8;
+    color: #ffffff;
+    font-size: 21px;
+    margin-right: 30px;
+}
+
+#story-footer .contact .info .text p{
+    font-family: 'Arimo', sans-serif;
+    font-size:18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align:left;
+}
+
+#story-footer .contact .info .text .up{
+    margin-bottom: 10px;
+}
+
+#story-footer .information .links{
+    height: 100%;
+    width: 290px;
+}
+
+#story-footer .information .links a{
+    font-family: 'Arimo', sans-serif;
+    font-size:18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align:left;
+    transition: .4s;
+    margin-bottom: 40px;
+    margin-left: 47px;
+    display: block;
+}
+
+#story-footer .information .links .top{
+    margin-top: 58px;
+}
+
+#story-footer .information .links a:hover{
+    margin-left:62px;
+}
+
+#story-footer .information .links .about{
+    margin-left:62px;
+}
+
+#story-footer .information .map{
+    width: 460px;
+    height: 100%;
+}
+
+#story-footer .information .map form{
+    margin-top: 60px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 28px;
+}
+
+#story-footer .information .map form input{
+    width: 358px;
+    height:70px;
+    border: 1px solid #444;
+    background: #1d2228;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+    outline: 0;
+}
+
+#story-footer .information .map form input::placeholder{
+    font-family: 'Arimo', sans-serif;
+    font-size:16px;
+    font-weight: 400;
+    color: #444444;
+}
+
+#story-footer .information .map form button{
+    font-family: 'Arimo', sans-serif;
+    border: 0;
+    font-size:20px;
+    font-weight: 400;
+    color: #444444;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 147px;
+    background: #e3d1b8;
+    transition: .4s;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: capitalize;
+}
+
+#story-footer .information .map form button:hover{
+    cursor: pointer;
+}
+
+#story-footer .information .map .map-img{
+    width: 450px;
+    height:235px;
+    border: 5px solid #171a1e;
+    transition: .4s;
+}
+
+#story-footer .information .map .map-img img{
+    width: 100%;
+    height: 100%;
+}
+
+#story-footer .information .map .map-img:hover{
+    cursor: pointer;
+}
+
+#story-footer .designer-and-icon{
+    display: flex;
+    align-items: center;
+}
+
+#story-footer .designer-and-icon .designer{
+    width: 50%;
+}
+
+#story-footer .designer-and-icon .designer p{
+    font-family: 'Arimo', sans-serif;
+    font-size:16px;
+    font-weight: 400;
+    color: #444444;
+}
+
+#story-footer .designer-and-icon .designer span{
+    color: #fff;
+}
+
+#story-footer .designer-and-icon .icon{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#story-footer .designer-and-icon .icon a i{
+    height: 74px;
+    line-height: 74px;
+    text-align: center;
+    color: #ffffff;
+    border-left:1px solid #161a1e;
+    width: 50px;
+    transition: .4s;
+    font-size: 18px;
+}
+
+#story-footer .designer-and-icon .icon .last{
+    border-right:1px solid #161a1e;
+}
+
+#story-footer .designer-and-icon .icon a i:hover{
+    background: #e4d2b9;
+    border-color: #e4d2b9;
+    color: #444444;
+}
+
+/*===================================================
+                footer part css end
+===================================================*/
+
+
+
+
+/*===================================================
+              page-2 our story css end
+===================================================*/
+
+
+
+
+
+
+
+
+
+/*===================================================
+              page-3 our products css start
+===================================================*/
+
+
+
+
+
+
+
+
+/*===================================================
+                manubar part css start
+===================================================*/
+
+#products-manubar{
+    background:url(../Images/banner.png) no-repeat center;
+    background-size:cover;
+    padding-top: 40px;
+    padding-bottom:115px;
+    margin-bottom: 221px;
+}
+
+#products-manubar .manu{
+    display: flex;
+    align-items: center;
+}
+
+#products-manubar .manu .logo{
+    width: 20%
+}
+
+#products-manubar .manu .logo img{
+    width:43%;
+}
+
+#products-manubar .manu .manuiteam{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#products-manubar .manu .manuiteam ul li a{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 52px;
+    font-family: 'Arimo', sans-serif;
+    transition: .4s;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: right;
+    position: relative;
+}
+
+#products-manubar .manu .manuiteam ul li a:before{
+    position: absolute;
+    top:-10px;
+    left: 0;
+    content: '';
+    height: 1px;
+    width:0;
+    transition: .4s;
+    background:#abb89e;
+}
+
+#products-manubar .manu .manuiteam ul li a:after{
+    position: absolute;
+    bottom:-10px;
+    right: 0;
+    content: '';
+    height: 1px;
+    width:0;
+    transition: .4s;
+    background:#abb89e;
+}
+
+#products-manubar .manu .manuiteam ul li a:hover{
+    color: #abb89e;
+}
+
+#products-manubar .manu .manuiteam ul li a:hover:before{
+    width: 100%;
+}
+
+#products-manubar .manu .manuiteam ul li a:hover:after{
+    width: 100%;
+}
+
+#products-manubar .manu .manuiteam ul li .pro{
+    color: #abb89e;
+}
+
+#products-manubar .manu .manuiteam ul li .pro:after{
+    width: 100%;
+}
+
+#products-manubar .manu .manuiteam ul li .pro:before{
+    width: 100%;
+}
+
+/*===================================================
+                manubar part css end
+===================================================*/
+
+/*===================================================
+                banner part css start
+===================================================*/
+
+#products-banner .prod{
+    background:url(../Images/title-background.png) no-repeat center;
+    padding: 46px 0;
+    position: absolute;
+    top:115px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 5px 73px 15px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 5px 73px 15px rgba(0,0,0,0.05);
+    box-shadow: 0px 5px 73px 15px rgba(0,0,0,0.05);
+}
+
+#products-banner .prod .text h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #c9b598;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+#products-banner .text .ancor{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#products-banner .text .ancor a{
+    color: #444444;
+    font-size: 18px;
+    font-family: 'Arimo', sans-serif;
+    transition: .4s;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+}
+
+#products-banner .text .ancor a:after{
+    position: absolute;
+    bottom:2px;
+    content: '';
+    left: 0;
+    height: 1px;
+    width:100%;
+    background:#abb89e;
+    opacity:0;
+}
+
+#products-banner .text .ancor a:hover{
+    cursor: pointer;
+    color: #abb89e;
+    z-index: 9999
+}
+
+#products-banner .text .ancor a:hover:after{
+    opacity:1;
+}
+
+#products-banner .text .ancor .pr{
+    color: #abb89e;
+}
+
+#products-banner .text .ancor .pr:after{
+    opacity:1;
+}
+
+#products-banner .text .ancor p{
+    font-size: 25px;
+    margin-right:3px;
+    display: inline-block;
+    color: #222222;
+    margin-left: 3px;
+}
+
+/*===================================================
+                banner part css end
+===================================================*/
+
+/*===================================================
+                our products part css start
+===================================================*/
+
+#products-products{
+    margin-bottom:100px;
+}
+
+#products-products .products{
+    display: flex;
+    justify-content: space-between;
+}
+
+#products-products .products .show{
+    height: 565px;
+    width: 264px;
+    background: #ffffff;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 80px -14px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0px 0px 80px -14px rgba(0,0,0,0.12);
+    box-shadow: 0px 0px 80px -14px rgba(0,0,0,0.12);
+    transition: .4s;
+}
+
+#products-products .products .show .border{
+    width: 230px;
+    height: 733px;
+    border: 1px solid #eae6e6;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+#products-products .products .show .design{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#products-products .products .show .product{
+    position: absolute;
+    top:138px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#products-products .products .show .product img{
+    height: 465px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#products-products .products .show .product p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #444444;
+    text-align: center; 
+    margin-top: 13px;
+}
+
+#products-products .products .show .product .price{
+    margin-top: 10px;
+}
+
+#products-products .products .show:hover{
+    cursor: pointer;
+}
+
+#products-products .downlevel{
+    margin-top: 230px;
+    margin-bottom: 210px;
+}
+
+#products-products .page-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#products-products .page-number li a{
+    width: 70px;
+    height:70px;
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+    line-height: 70px;
+    text-align: center;
+    font-size: 20px;
+    color:  #dddddd;
+    transition: .4s;
+    margin: 0 5px;
+    font-family: 'Arimo', sans-serif;
+}
+
+#products-products .page-number li form input{
+    width: 70px;
+    height:70px;
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+    line-height: 70px;
+    text-align: center;
+    font-size: 20px;
+    color:  #dddddd;
+    transition: .4s;
+    margin: 0 5px;
+    box-sizing: border-box;
+}
+
+#products-products .page-number li form input::placeholder{
+    color: #dddddd;
+}
+
+#products-products .page-number li a i{
+    font-size: 25px;
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+
+#products-products .page-number li a:hover{
+    background: #dddddd;
+    color: #fff;
+}
+
+#products-products .page-number li .up{
+    background:#dddddd;
+    color: #fff;
+}
+
+#products-products .page-number p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 30px;
+    color:  #adadad;
+    margin: 0 10px;
+}
+
+/*===================================================
+                our products part css end
+===================================================*/
+
+/*===================================================
+                footer part css start
+===================================================*/
+
+#products-footer{
+    background: url(../Images/footer-banner.png) no-repeat center;
+    background-size: cover;
+    padding-top:60px;
+}
+
+#products-footer .logo{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+}
+
+#products-footer .information{
+    height: 458px;
+    width: 100%;
+    border-top: 1px solid #161a1e;
+    border-bottom: 1px solid #161a1e;
+    display: flex;
+}
+
+#products-footer .contact{
+    width: 390px;
+    height: 100%;
+}
+
+#products-footer .contact .info{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 33.33%;
+}
+
+#products-footer .contact .info:after{
+    width: 360px;
+    height: 1px;
+    content: '';
+    position: absolute;
+    bottom:0px;
+    left: 0;
+    background: #161a1e;
+}
+
+#products-footer .contact .last:after{
+    height: 0;
+}
+
+#products-footer .contact .info i{
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 68px;
+    background: #e3d1b8;
+    color: #ffffff;
+    font-size: 21px;
+    margin-right: 30px;
+}
+
+#products-footer .contact .info .text p{
+    font-family: 'Arimo', sans-serif;
+    font-size:18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align:left;
+}
+
+#products-footer .contact .info .text .up{
+    margin-bottom: 10px;
+}
+
+#products-footer .information .links{
+    height: 100%;
+    width: 290px;
+}
+
+#products-footer .information .links a{
+    font-family: 'Arimo', sans-serif;
+    font-size:18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align:left;
+    transition: .4s;
+    margin-bottom: 40px;
+    margin-left: 47px;
+    display: block;
+}
+
+#products-footer .information .links .top{
+    margin-top: 58px;
+}
+
+#products-footer .information .links a:hover{
+    margin-left:62px;
+}
+
+#products-footer .information .map{
+    width: 460px;
+    height: 100%;
+}
+
+#products-footer .information .map form{
+    margin-top: 60px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 28px;
+}
+
+#products-footer .information .map form input{
+    width: 358px;
+    height:70px;
+    border: 1px solid #444;
+    background: #1d2228;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+    outline: 0;
+}
+
+#products-footer .information .map form input::placeholder{
+    font-family: 'Arimo', sans-serif;
+    font-size:16px;
+    font-weight: 400;
+    color: #444444;
+}
+
+#products-footer .information .map form button{
+    font-family: 'Arimo', sans-serif;
+    font-size:20px;
+    font-weight: 400;
+    color: #444444;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 147px;
+    background: #e3d1b8;
+    transition: .4s;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: capitalize;
+    border: 0;
+}
+
+#products-footer .information .map form button:hover{
+    cursor: pointer;
+}
+
+#products-footer .information .map .map-img{
+    width: 450px;
+    height:235px;
+    border: 5px solid #171a1e;
+    transition: .4s;
+}
+
+#products-footer .information .map .map-img img{
+    width: 100%;
+    height: 100%;
+}
+
+#products-footer .information .map .map-img:hover{
+    cursor: pointer;
+}
+
+#products-footer .designer-and-icon{
+    display: flex;
+    align-items: center;
+}
+
+#products-footer .designer-and-icon .designer{
+    width: 50%;
+}
+
+#products-footer .designer-and-icon .designer p{
+    font-family: 'Arimo', sans-serif;
+    font-size:16px;
+    font-weight: 400;
+    color: #444444;
+}
+
+#products-footer .designer-and-icon .designer span{
+    color: #fff;
+}
+
+#products-footer .designer-and-icon .icon{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#products-footer .designer-and-icon .icon a i{
+    height: 74px;
+    line-height: 74px;
+    text-align: center;
+    color: #ffffff;
+    border-left:1px solid #161a1e;
+    width: 50px;
+    transition: .4s;
+    font-size: 18px;
+}
+
+#products-footer .designer-and-icon .icon .last{
+    border-right:1px solid #161a1e;
+}
+
+#products-footer .designer-and-icon .icon a i:hover{
+    background: #e4d2b9;
+    border-color: #e4d2b9;
+    color: #444444;
+}
+
+/*===================================================
+                footer part css end
+===================================================*/
+
+
+
+
+
+/*===================================================
+              page-3 ourproducts css end
+===================================================*/
+
+
+
+
+
+/*===================================================
+              page-4 blog details css start
+===================================================*/
+
+
+
+
+
+
+
+
+/*===================================================
+                manubar part css start
+===================================================*/
+
+#blog-manubar{
+    background:url(../Images/banner.png) no-repeat center;
+    background-size:cover;
+    padding-top: 40px;
+    padding-bottom:115px;
+    margin-bottom: 190px;
+}
+
+#blog-manubar .manu{
+    display: flex;
+    align-items: center;
+}
+
+#blog-manubar .manu .logo{
+    width: 20%
+}
+
+#blog-manubar .manu .logo img{
+    width:43%;
+}
+
+#blog-manubar .manu .manuiteam{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#blog-manubar .manu .manuiteam ul li a{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 52px;
+    font-family: 'Arimo', sans-serif;
+    transition: .4s;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: right;
+    position: relative;
+}
+
+#blog-manubar .manu .manuiteam ul li a:before{
+    position: absolute;
+    top:-10px;
+    left: 0;
+    content: '';
+    height: 1px;
+    width:0;
+    transition: .4s;
+    background:#abb89e;
+}
+
+#blog-manubar .manu .manuiteam ul li a:after{
+    position: absolute;
+    bottom:-10px;
+    right: 0;
+    content: '';
+    height: 1px;
+    width:0;
+    transition: .4s;
+    background:#abb89e;
+}
+
+#blog-manubar .manu .manuiteam ul li a:hover{
+    color: #abb89e;
+}
+
+#blog-manubar .manu .manuiteam ul li a:hover:before{
+    width: 100%;
+}
+
+#blog-manubar .manu .manuiteam ul li a:hover:after{
+    width: 100%;
+}
+
+#blog-manubar .manu .manuiteam ul li .blo{
+    color: #abb89e;
+}
+
+#blog-manubar .manu .manuiteam ul li .blo:after{
+    width: 100%;
+}
+
+#blog-manubar .manu .manuiteam ul li .blo:before{
+    width: 100%;
+}
+
+/*===================================================
+                manubar part css end
+===================================================*/
+
+/*===================================================
+                banner part css start
+===================================================*/
+
+#blog-banner .blog{
+    background:url(../Images/title-background.png) no-repeat center;
+    padding: 46px 0;
+    position: absolute;
+    top:115px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 5px 73px 15px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 5px 73px 15px rgba(0,0,0,0.05);
+    box-shadow: 0px 5px 73px 15px rgba(0,0,0,0.05);
+}
+
+#blog-banner .blog .text h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #c9b598;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+#blog-banner .blog .ancor{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#blog-banner .text .ancor a{
+    color: #444444;
+    font-size: 18px;
+    font-family: 'Arimo', sans-serif;
+    transition: .4s;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+}
+
+#blog-banner .text .ancor a:after{
+    position: absolute;
+    bottom:2px;
+    content: '';
+    left: 0;
+    height: 1px;
+    width:100%;
+    background:#abb89e;
+    opacity:0;
+}
+
+#blog-banner .text .ancor a:hover{
+    cursor: pointer;
+    color: #abb89e;
+    z-index: 9999
+}
+
+#blog-banner .text .ancor a:hover:after{
+    opacity:1;
+}
+
+#blog-banner .text .ancor .bl{
+    color: #abb89e;
+}
+
+#blog-banner .text .ancor .bl:after{
+    opacity:1;
+}
+
+#blog-banner .text .ancor p{
+    font-size: 25px;
+    margin-right:3px;
+    display: inline-block;
+    color: #222222;
+    margin-left: 3px;
+}
+
+/*===================================================
+                banner part css end
+===================================================*/
+
+/*===================================================
+                blog part css start
+===================================================*/
+
+#blog-part{
+    margin-bottom:65px;
+}
+
+#blog-part .bl{
+}
+
+#blog-part .title{
+    color: #b7c5a9;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: "Arimo", sans-serif;
+    line-height: 40px;
+    width: 880px;
+    margin-bottom: 15px;
+    padding-left: 100px;
+}
+
+#blog-part .d-l-c-s{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+
+#blog-part .d-l-c-s .date{
+    padding-left: 100px;
+    width: 20%;
+}
+
+#blog-part .d-l-c-s .l-c-s{
+    padding-right:90px;
+    text-align: right;
+    width: 60%;
+}
+
+#blog-part .d-l-c-s a{
+    color: #999;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    padding-right: 27px;
+    text-transform: capitalize;
+}
+
+#blog-part .d-l-c-s a i{
+    padding-right: 5px;
+}
+
+#blog-part .last{
+    padding-right: 0;
+}
+
+#blog-part img{
+    width: 1140px;
+    margin-bottom: 20px;
+}
+
+#blog-part .img-details{
+    color: #444;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    font-family: 'Arimo', sans-serif;
+    padding-left: 100px;
+    width: 935px;
+}
+
+#blog-part .d-l{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+#blog-part .highlight{
+    width: 1140px;;
+    background: #b7c5a9;
+    padding: 30px 0;
+    margin-bottom: 50px;
+}
+
+#blog-part .highlight h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Montserrat Alternates', sans-serif;
+    width:1000px;
+    margin-left: 85px;
+}
+
+#blog-part .point{
+    margin-top: 50px;
+    width:935px;
+    display: flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#blog-part .point .iteam{
+    width: 50%;
+}
+
+#blog-part .point .iteam ul li{
+    color: #444;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    font-family: 'Arimo', sans-serif;
+    margin-bottom: 15px;
+}
+
+#blog-part .point .iteam ul li i{
+    margin-right: 10px;
+    color: #b7c5a9;
+}
+
+#blog-part .point .iteam .right{
+    margin-left: 20px;
+}
+
+#blog-part .tags{
+    margin-top: 84px;
+    margin-bottom: 30px;
+}
+
+#blog-part .tags:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: 
+}
+
+
+#blog-part .t-s{
+    color: #151515;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat Alternates', sans-serif;
+    line-height: 24px;
+    padding-right: 22px;
+    display: inline-block;
+}
+
+
+#blog-part .tags a{
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    color: #444444;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    line-height: 24px;
+    transition: .4s;
+    text-transform: capitalize;
+}
+
+#blog-part .tags a:hover{
+    color: #b7c5a9;
+    border-color: #b7c5a9;
+}
+
+#blog-part .share a{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    color: #777777;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 2px;
+    transition: .4s;
+}
+
+#blog-part .share a:hover{
+    background: #b7c5a9;    
+    border-color: #b7c5a9;
+    color: #fff;
+}
+
+#blog-part .c-n{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    position: relative;
+}
+
+#blog-part .c-n:before{
+    position: absolute;
+    content: '';
+    width:1920px;
+    height: 1px;
+    top:30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #b7c5a9;
+}
+
+#blog-part .c-n h2{
+    color: #151515;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Arimo', sans-serif;
+    line-height: 22px;
+    text-transform: capitalize;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#blog-part .c-n .iteam{
+    width: 48.6%;
+}
+
+#blog-part .c-n .iteam .comment{
+    display: flex;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+#blog-part .c-n .iteam .reply-com{
+    width: 82%;
+    margin-left: auto;
+}
+
+#blog-part .c-n .iteam .comment .img{
+    width:85px;
+    height:85px;
+}
+
+#blog-part .c-n .iteam .comment .img img{
+    width: 100%;
+    height: 100%;
+}
+
+#blog-part .c-n .iteam .comment .com{
+    padding-left:14px;
+    width:84%;
+    padding-top:3px;
+}
+
+#blog-part .c-n .iteam .comment .com .n-d{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:6px;
+}
+
+#blog-part .c-n .iteam .comment .com .n-d h3{
+    color: #151515;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Montserrat Alternates', sans-serif;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+#blog-part .c-n .iteam .comment .com .n-d .date{
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+
+#blog-part .c-n .iteam .comment .com .de{
+    color: #444444;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    line-height: 22px;
+}
+
+#blog-part .c-n .iteam .comment .com .reply{
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    transition: .4s;
+    margin-top: 5px;
+}
+
+#blog-part .c-n .iteam .comment .com .reply i{
+    padding-right: 3px;
+}
+
+#blog-part .c-n .iteam .comment .com .reply:hover{
+    color: #b7c5a9;
+}
+
+#blog-part .c-n .iteam form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top:5px;
+    width: 100%;
+}
+
+#blog-part .c-n .iteam form input{
+    width: 45.5%;
+    height: 35px;
+    padding-left: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #444444;
+    outline: 0;
+}
+
+#blog-part .c-n .iteam form textarea{
+    width: 100%;
+    height:120px;
+    padding-left: 10px;
+    border: 1px solid #ddd;
+    resize: none;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size:16px;
+    box-sizing: border-box;
+    color: #222222;
+    outline: 0;
+}
+
+#blog-part .c-n .iteam form input::placeholder{
+    font-size:14px;
+    font-style: italic;
+}
+
+#blog-part .c-n .iteam form textarea::placeholder{
+    font-size:14px;
+    font-style: italic;
+}
+
+#blog-part .c-n .iteam form .button{
+    width: 100%;
+}
+
+#blog-part .c-n .iteam form .button button{
+    width: 100%;
+    border: 0;
+    margin:15px 0;
+    padding: 11px 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    background: #b7c5a9;
+    cursor: pointer;
+    display: block;
+    transition: .4s;
+}
+
+#blog-part .c-n .iteam form .button button:hover{
+    background: #e3d1b8;
+    color: #fff;
+}
+
+#blog-part .c-n .iteam form p{
+    color: #222222;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+
+#blog-part .c-n .iteam form p a{
+    color: #3b00ff;
+}
+
+
+/*===================================================
+                blog part css end
+===================================================*/
+
+/*===================================================
+                footer part css start
+===================================================*/
+
+#blog-footer{
+    background: url(../Images/footer-banner.png) no-repeat center;
+    background-size: cover;
+    padding-top:60px;
+}
+
+#blog-footer .logo{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+}
+
+#blog-footer .information{
+    height: 458px;
+    width: 100%;
+    border-top: 1px solid #161a1e;
+    border-bottom: 1px solid #161a1e;
+    display: flex;
+}
+
+#blog-footer .contact{
+    width: 390px;
+    height: 100%;
+}
+
+#blog-footer .contact .info{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 33.33%;
+}
+
+#blog-footer .contact .info:after{
+    width: 360px;
+    height: 1px;
+    content: '';
+    position: absolute;
+    bottom:0px;
+    left: 0;
+    background: #161a1e;
+}
+
+#blog-footer .contact .last:after{
+    height: 0;
+}
+
+#blog-footer .contact .info i{
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 68px;
+    background: #e3d1b8;
+    color: #ffffff;
+    font-size: 21px;
+    margin-right: 30px;
+}
+
+#blog-footer .contact .info .text p{
+    font-family: 'Arimo', sans-serif;
+    font-size:18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align:left;
+}
+
+#blog-footer .contact .info .text .up{
+    margin-bottom: 10px;
+}
+
+#blog-footer .information .links{
+    height: 100%;
+    width: 290px;
+}
+
+#blog-footer .information .links a{
+    font-family: 'Arimo', sans-serif;
+    font-size:18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align:left;
+    transition: .4s;
+    margin-bottom: 40px;
+    margin-left: 47px;
+    display: block;
+}
+
+#blog-footer .information .links .top{
+    margin-top: 58px;
+}
+
+#blog-footer .information .links a:hover{
+    margin-left:62px;
+}
+
+#blog-footer .information .links .b{
+    margin-left:62px;
+}
+
+#blog-footer .information .map{
+    width: 460px;
+    height: 100%;
+}
+
+#blog-footer .information .map form{
+    margin-top: 60px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 28px;
+}
+
+#blog-footer .information .map form input{
+    width: 358px;
+    height:70px;
+    border: 1px solid #444;
+    background: #1d2228;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+    outline: 0;
+}
+
+#blog-footer .information .map form input::placeholder{
+    font-family: 'Arimo', sans-serif;
+    font-size:16px;
+    font-weight: 400;
+    color: #444444;
+}
+
+#blog-footer .information .map form button{
+    font-family: 'Arimo', sans-serif;
+    font-size:20px;
+    border: 0;
+    font-weight: 400;
+    color: #444444;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 147px;
+    background: #e3d1b8;
+    transition: .4s;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: capitalize;
+}
+
+#blog-footer .information .map form button:hover{
+    cursor: pointer;
+}
+
+#blog-footer .information .map .map-img{
+    width: 450px;
+    height:235px;
+    border: 5px solid #171a1e;
+    transition: .4s;
+}
+
+#blog-footer .information .map .map-img img{
+    width: 100%;
+    height: 100%;
+}
+
+#blog-footer .information .map .map-img:hover{
+    cursor: pointer;
+}
+
+#blog-footer .designer-and-icon{
+    display: flex;
+    align-items: center;
+}
+
+#blog-footer .designer-and-icon .designer{
+    width: 50%;
+}
+
+#blog-footer .designer-and-icon .designer p{
+    font-family: 'Arimo', sans-serif;
+    font-size:16px;
+    font-weight: 400;
+    color: #444444;
+}
+
+#blog-footer .designer-and-icon .designer span{
+    color: #fff;
+}
+
+#blog-footer .designer-and-icon .icon{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#blog-footer .designer-and-icon .icon a i{
+    height: 74px;
+    line-height: 74px;
+    text-align: center;
+    color: #ffffff;
+    border-left:1px solid #161a1e;
+    width: 50px;
+    transition: .4s;
+    font-size: 18px;
+}
+
+#blog-footer .designer-and-icon .icon .last{
+    border-right:1px solid #161a1e;
+}
+
+#blog-footer .designer-and-icon .icon a i:hover{
+    background: #e4d2b9;
+    border-color: #e4d2b9;
+    color: #444444;
+}
+
+/*===================================================
+                footer part css end
+===================================================*/
+
+
+
+
+
+/*===================================================
+              page-4 blog details css end
+===================================================*/
+
+
+
+
+
+
+/*===================================================
+              page-5 contact css start
+===================================================*/
+
+
+
+
+
+
+
+
+/*===================================================
+                manubar part css start
+===================================================*/
+
+#contact-manubar{
+    background:url(../Images/banner.png) no-repeat center;
+    background-size:cover;
+    padding-top: 40px;
+    padding-bottom:115px;
+    margin-bottom: 200px;
+}
+
+#contact-manubar .manu{
+    display: flex;
+    align-items: center;
+}
+
+#contact-manubar .manu .logo{
+    width: 20%
+}
+
+#contact-manubar .manu .logo img{
+    width:43%;
+}
+
+#contact-manubar .manu .manuiteam{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#contact-manubar .manu .manuiteam ul li a{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 52px;
+    font-family: 'Arimo', sans-serif;
+    transition: .4s;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: right;
+    position: relative;
+}
+
+#contact-manubar .manu .manuiteam ul li a:before{
+    position: absolute;
+    top:-10px;
+    left: 0;
+    content: '';
+    height: 1px;
+    width:0;
+    transition: .4s;
+    background:#abb89e;
+}
+
+#contact-manubar .manu .manuiteam ul li a:after{
+    position: absolute;
+    bottom:-10px;
+    right: 0;
+    content: '';
+    height: 1px;
+    width:0;
+    transition: .4s;
+    background:#abb89e;
+}
+
+#contact-manubar .manu .manuiteam ul li a:hover{
+    color: #abb89e;
+}
+
+#contact-manubar .manu .manuiteam ul li a:hover:before{
+    width: 100%;
+}
+
+#contact-manubar .manu .manuiteam ul li a:hover:after{
+    width: 100%;
+}
+
+#contact-manubar .manu .manuiteam ul li .con{
+    color: #abb89e;
+}
+
+#contact-manubar .manu .manuiteam ul li .con:after{
+    width: 100%;
+}
+
+#contact-manubar .manu .manuiteam ul li .con:before{
+    width: 100%;
+}
+
+/*===================================================
+                manubar part css end
+===================================================*/
+
+/*===================================================
+                banner part css start
+===================================================*/
+
+#contact-banner .cont{
+    background:url(../Images/title-background.png) no-repeat center;
+    padding: 46px 0;
+    position: absolute;
+    top:115px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 5px 73px 15px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 5px 73px 15px rgba(0,0,0,0.05);
+    box-shadow: 0px 5px 73px 15px rgba(0,0,0,0.05);
+}
+
+#contact-banner .cont .text h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #c9b598;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+#contact-banner .text .ancor{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-banner .text .ancor a{
+    color: #444444;
+    font-size: 18px;
+    font-family: 'Arimo', sans-serif;
+    transition: .4s;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+}
+
+#contact-banner .text .ancor a:after{
+    position: absolute;
+    bottom:2px;
+    content: '';
+    left: 0;
+    height: 1px;
+    width:100%;
+    background:#abb89e;
+    opacity:0;
+}
+
+#contact-banner .text .ancor a:hover{
+    cursor: pointer;
+    color: #abb89e;
+    z-index: 9999
+}
+
+#contact-banner .text .ancor a:hover:after{
+    opacity:1;
+}
+
+#contact-banner .text .ancor .co{
+    color: #abb89e;
+}
+
+#contact-banner .text .ancor .co:after{
+    opacity:1;
+}
+
+#contact-banner .text .ancor p{
+    font-size: 25px;
+    margin-right:3px;
+    display: inline-block;
+    color: #222222;
+    margin-left: 3px;
+}
+
+/*===================================================
+                banner part css end
+===================================================*/
+
+/*===================================================
+             contact-info part css start
+===================================================*/
+
+#contact-info{
+    margin-bottom:95px;
+}
+
+#contact-info .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+
+#contact-info .l-img{
+    width: 31.5%;
+}
+
+#contact-info .l-img img{
+    width: 100%;
+    height: 717px;
+    border-radius:5px;
+}
+
+#contact-info .con-in{
+    width:865px;
+    background: #fff;
+    padding: 60px 40px;
+    padding-bottom: 70px;
+    position: absolute;
+    top:30px;
+    right: 0;
+    z-index: 9999;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 5px 115px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 5px 115px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 5px 115px 0px rgba(0,0,0,0.05);
+} 
+
+#contact-info .con-in h1{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #222222;
+    text-align: left;
+    position: relative;
+    margin-bottom:8px;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+#contact-info .con-in h1:before{
+    position: absolute;
+    top: 50%;
+    left:100%;
+    content: '';
+    background:#b7c5a9;
+    height: 1px;
+    width:147px;
+    transform: translateY(-50%);
+}
+
+#contact-info .con-in .phn h1:before{
+    width: 50px;
+}
+
+#contact-info .con-in .em h1:before{
+    width:75px;
+}
+
+#contact-info .con-in p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #444444;
+    text-align: left;
+    position: relative;
+    line-height: 26px;
+}
+
+#contact-info .form-part{
+    width:65.9%;
+    margin-bottom:4px;
+}
+
+#contact-info .form-part h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 43px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #e4d2b9;
+    text-align: left;
+    position: relative;
+    margin-bottom:31px;
+    display: inline-block;
+    padding-right: 30px;
+}
+
+#contact-info .form-part h1:after{
+    position: absolute;
+    top: 50%;
+    left:100%;
+    content: '';
+    background: #e4d2b9;
+    height: 1px;
+    width:107px;
+    transform: translateY(-50%);
+}
+
+#contact-info .form-part form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#contact-info .form-part form .iteam{
+    width:47.7%;
+    padding: 17px 0;
+    border: 1px solid #eee;
+    padding-left: 20px;
+    color: #444444;
+    font-size: 16px;
+    font-family: 'Arimo', sans-serif;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+#contact-info .form-part form .massage{
+    width:100%;
+    color: #444444;
+    font-size: 16px;
+    font-family: 'Arimo', sans-serif;
+    padding-left: 20px;
+    border: 1px solid #eee;
+    padding-top: 17px;
+    box-sizing: border-box;
+    resize: none;
+    margin-top: 21px;
+    height: 200px;
+    outline: 0;
+}
+
+#contact-info .form-part form .button{
+    margin-top: 24px;
+}
+
+#contact-info .form-part form .button button{
+    padding: 20px 30px;
+    background: #E4D2B9;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    transition: .4s;
+}
+
+#contact-info .form-part form .button button:before{
+    height: 1px;
+    width: 60px;
+    background: #A78F6D;
+    position: absolute;
+    left: 83%;
+    top: 50%;
+    transform: translateY(-50%);
+    content:'';
+    transition: .4s;
+}
+
+#contact-info .form-part form .button button:hover{
+    padding-right: 50px;
+}
+
+/*===================================================
+             contact-info part css end
+===================================================*/
+
+/*===================================================
+                footer part css start
+===================================================*/
+
+#contact-footer{
+    background: url(../Images/footer-banner.png) no-repeat center;
+    background-size: cover;
+    padding-top:60px;
+}
+
+#contact-footer .logo{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+}
+
+#contact-footer .information{
+    height: 458px;
+    width: 100%;
+    border-top: 1px solid #161a1e;
+    border-bottom: 1px solid #161a1e;
+    display: flex;
+}
+
+#contact-footer .contact{
+    width: 390px;
+    height: 100%;
+}
+
+#contact-footer .contact .info{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 33.33%;
+}
+
+#contact-footer .contact .info:after{
+    width: 360px;
+    height: 1px;
+    content: '';
+    position: absolute;
+    bottom:0px;
+    left: 0;
+    background: #161a1e;
+}
+
+#contact-footer .contact .last:after{
+    height: 0;
+}
+
+#contact-footer .contact .info i{
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 68px;
+    background: #e3d1b8;
+    color: #ffffff;
+    font-size: 21px;
+    margin-right: 30px;
+}
+
+#contact-footer .contact .info .text p{
+    font-family: 'Arimo', sans-serif;
+    font-size:18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align:left;
+}
+
+#contact-footer .contact .info .text .up{
+    margin-bottom: 10px;
+}
+
+#contact-footer .information .links{
+    height: 100%;
+    width: 290px;
+}
+
+#contact-footer .information .links a{
+    font-family: 'Arimo', sans-serif;
+    font-size:18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align:left;
+    transition: .4s;
+    margin-bottom: 40px;
+    margin-left: 47px;
+    display: block;
+}
+
+#contact-footer .information .links .top{
+    margin-top: 58px;
+}
+
+#contact-footer .information .links a:hover{
+    margin-left:62px;
+}
+
+#contact-footer .information .links .c{
+    margin-left:62px;
+}
+
+#contact-footer .information .map{
+    width: 460px;
+    height: 100%;
+}
+
+#contact-footer .information .map form{
+    margin-top: 60px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 28px;
+}
+
+#contact-footer .information .map form input{
+    width: 358px;
+    height:70px;
+    border: 1px solid #444;
+    background: #1d2228;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+    outline: 0;
+}
+
+#contact-footer .information .map form input::placeholder{
+    font-family: 'Arimo', sans-serif;
+    font-size:16px;
+    font-weight: 400;
+    color: #444444;
+}
+
+#contact-footer .information .map form button{
+    font-family: 'Arimo', sans-serif;
+    font-size:20px;
+    font-weight: 400;
+    color: #444444;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 147px;
+    background: #e3d1b8;
+    transition: .4s;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: capitalize;
+    border: 0;
+}
+
+#contact-footer .information .map form button:hover{
+    cursor: pointer;
+}
+
+#contact-footer .information .map .map-img{
+    width: 450px;
+    height:235px;
+    border: 5px solid #171a1e;
+    transition: .4s;
+}
+
+#contact-footer .information .map .map-img img{
+    width: 100%;
+    height: 100%;
+}
+
+#contact-footer .information .map .map-img:hover{
+    cursor: pointer;
+}
+
+#contact-footer .designer-and-icon{
+    display: flex;
+    align-items: center;
+}
+
+#contact-footer .designer-and-icon .designer{
+    width: 50%;
+}
+
+#contact-footer .designer-and-icon .designer p{
+    font-family: 'Arimo', sans-serif;
+    font-size:16px;
+    font-weight: 400;
+    color: #444444;
+}
+
+#contact-footer .designer-and-icon .designer span{
+    color: #fff;
+}
+
+#contact-footer .designer-and-icon .icon{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#contact-footer .designer-and-icon .icon a i{
+    height: 74px;
+    line-height: 74px;
+    text-align: center;
+    color: #ffffff;
+    border-left:1px solid #161a1e;
+    width: 50px;
+    transition: .4s;
+    font-size: 18px;
+}
+
+#contact-footer .designer-and-icon .icon .last{
+    border-right:1px solid #161a1e;
+}
+
+#contact-footer .designer-and-icon .icon a i:hover{
+    background: #e4d2b9;
+    border-color: #e4d2b9;
+    color: #444444;
+}
+
+/*===================================================
+                footer part css end
+===================================================*/
+
+
+
+
+
+/*===================================================
+              page-5 contact css end
+===================================================*/
+
+
+
+
+
+
+/*===================================================
+              page-6 error page css start
+===================================================*/
+
+
+
+
+
+
+
+
+/*===================================================
+                manubar part css start
+===================================================*/
+
+#error-manubar{
+    background:url(../Images/banner.png) no-repeat center;
+    background-size:cover;
+    padding-top: 40px;
+    padding-bottom:115px;
+    margin-bottom: 200px;
+}
+
+#error-manubar .manu{
+    display: flex;
+    align-items: center;
+}
+
+#error-manubar .manu .logo{
+    width: 20%
+}
+
+#error-manubar .manu .logo img{
+    width:43%;
+}
+
+#error-manubar .manu .manuiteam{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#error-manubar .manu .manuiteam ul li a{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 52px;
+    font-family: 'Arimo', sans-serif;
+    transition: .4s;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: right;
+    position: relative;
+}
+
+#error-manubar .manu .manuiteam ul li a:before{
+    position: absolute;
+    top:-10px;
+    left: 0;
+    content: '';
+    height: 1px;
+    width:0;
+    transition: .4s;
+    background:#abb89e;
+}
+
+#error-manubar .manu .manuiteam ul li a:after{
+    position: absolute;
+    bottom:-10px;
+    right: 0;
+    content: '';
+    height: 1px;
+    width:0;
+    transition: .4s;
+    background:#abb89e;
+}
+
+#error-manubar .manu .manuiteam ul li a:hover{
+    color: #abb89e;
+}
+
+#error-manubar .manu .manuiteam ul li a:hover:before{
+    width: 100%;
+}
+
+#error-manubar .manu .manuiteam ul li a:hover:after{
+    width: 100%;
+}
+
+#error-manubar .manu .manuiteam ul li .err{
+    color: #abb89e;
+}
+
+#error-manubar .manu .manuiteam ul li .err:after{
+    width: 100%;
+}
+
+#error-manubar .manu .manuiteam ul li .err:before{
+    width: 100%;
+}
+
+/*===================================================
+                manubar part css end
+===================================================*/
+
+/*===================================================
+                banner part css start
+===================================================*/
+
+#error-banner .erro{
+    background:url(../Images/title-background.png) no-repeat center;
+    padding: 46px 0;
+    position: absolute;
+    top:115px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 5px 73px 15px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 5px 73px 15px rgba(0,0,0,0.05);
+    box-shadow: 0px 5px 73px 15px rgba(0,0,0,0.05);
+}
+
+#error-banner .erro .text h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #c9b598;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+#error-banner .erro .ancor{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#error-banner .text .ancor a{
+    color: #444444;
+    font-size: 18px;
+    font-family: 'Arimo', sans-serif;
+    transition: .4s;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+}
+
+#error-banner .text .ancor a:after{
+    position: absolute;
+    bottom:2px;
+    content: '';
+    left: 0;
+    height: 1px;
+    width:100%;
+    background:#abb89e;
+    opacity:0;
+}
+
+#error-banner .text .ancor a:hover{
+    cursor: pointer;
+    color: #abb89e;
+    z-index: 9999
+}
+
+#error-banner .text .ancor a:hover:after{
+    opacity:1;
+}
+
+#error-banner .text .ancor .er{
+    color: #abb89e;
+}
+
+#error-banner .text .ancor .er:after{
+    opacity:1;
+}
+
+#error-banner .text .ancor p{
+    font-size: 25px;
+    margin-right:3px;
+    display: inline-block;
+    color: #222222;
+    margin-left: 3px;
+}
+
+
+#error-banner .erro .img-1{
+    position: absolute;
+    bottom:-35px;
+    height:180px;
+}
+
+#error-banner .erro .img-1 img{
+    height:100%;
+}
+
+#error-banner .erro .img-2{
+    position: absolute;
+    bottom:-5px;
+    right:-79px;;
+}
+
+/*===================================================
+                banner part css end
+===================================================*/
+
+/*===================================================
+                middle part css start
+===================================================*/
+
+#middle{
+    margin-bottom: 210px;
+}
+
+#middle .img-text img{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#middle .img-text .text{
+    margin-top: -115px;
+}
+
+#middle .img-text .text .left{
+    float: left;
+    margin-left: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#middle .img-text .text h1{
+    font-family: "Abril Fatface", cursive;
+    color: #444444;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#middle .img-text .text .left a{
+    padding: 18px 30px;
+    font-size: 18px;
+    color: #fff;
+    background: #b6c4a8;
+    margin-top: 15px;
+    font-family: 'Arimo', sans-serif;
+    position: relative;
+    margin-right: 25px;
+    transition: .4s;
+}
+
+#middle .img-text .text .left a:before{
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 1px;
+    background: #96aa81;
+    right:70%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+
+#middle .img-text .text .left a:hover{
+    padding-left: 40px;
+}
+
+#middle .img-text .text .left h1{
+    text-align: right;
+}
+
+#middle .img-text .text .right{
+    float: left;
+    margin-left:5%;
+}
+
+#middle .img-text .text .right h1{
+    text-align: left;
+}
+
+#middle .img-text .text .right p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #999999;
+    font-family: 'Arimo', sans-serif;
+    width:285px;
+    margin-left:25px;
+    margin-top: 14px;
+}
+
+/*===================================================
+                middle part css end
+===================================================*/
+
+/*===================================================
+                footer part css start
+===================================================*/
+
+#error-footer{
+    background: url(../Images/footer-banner.png) no-repeat center;
+    background-size: cover;
+    padding-top:60px;
+}
+
+#error-footer .logo{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+}
+
+#error-footer .information{
+    height: 458px;
+    width: 100%;
+    border-top: 1px solid #161a1e;
+    border-bottom: 1px solid #161a1e;
+    display: flex;
+}
+
+#error-footer .contact{
+    width: 390px;
+    height: 100%;
+}
+
+#error-footer .contact .info{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 33.33%;
+}
+
+#error-footer .contact .info:after{
+    width: 360px;
+    height: 1px;
+    content: '';
+    position: absolute;
+    bottom:0px;
+    left: 0;
+    background: #161a1e;
+}
+
+#error-footer .contact .last:after{
+    height: 0;
+}
+
+#error-footer .contact .info i{
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 68px;
+    background: #e3d1b8;
+    color: #ffffff;
+    font-size: 21px;
+    margin-right: 30px;
+}
+
+#error-footer .contact .info .text p{
+    font-family: 'Arimo', sans-serif;
+    font-size:18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align:left;
+}
+
+#error-footer .contact .info .text .up{
+    margin-bottom: 10px;
+}
+
+#error-footer .information .links{
+    height: 100%;
+    width: 290px;
+}
+
+#error-footer .information .links a{
+    font-family: 'Arimo', sans-serif;
+    font-size:18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align:left;
+    transition: .4s;
+    margin-bottom: 40px;
+    margin-left: 47px;
+    display: block;
+}
+
+#error-footer .information .links .top{
+    margin-top: 58px;
+}
+
+#error-footer .information .links a:hover{
+    margin-left:62px;
+}
+
+#error-footer .information .links .c{
+    margin-left:62px;
+}
+
+#error-footer .information .map{
+    width: 460px;
+    height: 100%;
+}
+
+#error-footer .information .map form{
+    margin-top: 60px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 28px;
+}
+
+#error-footer .information .map form input{
+    width: 358px;
+    height:70px;
+    outline: 0;
+    border: 1px solid #444;
+    background: #1d2228;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+#error-footer .information .map form input::placeholder{
+    font-family: 'Arimo', sans-serif;
+    font-size:16px;
+    font-weight: 400;
+    color: #444444;
+}
+
+#error-footer .information .map form button{
+    font-family: 'Arimo', sans-serif;
+    font-size:20px;
+    font-weight: 400;
+    color: #444444;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    border: 0;
+    width: 147px;
+    background: #e3d1b8;
+    transition: .4s;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: capitalize;
+}
+
+#error-footer .information .map form button:hover{
+    cursor: pointer;
+}
+
+#error-footer .information .map .map-img{
+    width: 450px;
+    height:235px;
+    border: 5px solid #171a1e;
+    transition: .4s;
+}
+
+#error-footer .information .map .map-img img{
+    width: 100%;
+    height: 100%;
+}
+
+#error-footer .information .map .map-img:hover{
+    cursor: pointer;
+}
+
+#error-footer .designer-and-icon{
+    display: flex;
+    align-items: center;
+}
+
+#error-footer .designer-and-icon .designer{
+    width: 50%;
+}
+
+#error-footer .designer-and-icon .designer p{
+    font-family: 'Arimo', sans-serif;
+    font-size:16px;
+    font-weight: 400;
+    color: #444444;
+}
+
+#error-footer .designer-and-icon .designer span{
+    color: #fff;
+}
+
+#error-footer .designer-and-icon .icon{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#error-footer .designer-and-icon .icon a i{
+    height: 74px;
+    line-height: 74px;
+    text-align: center;
+    color: #ffffff;
+    border-left:1px solid #161a1e;
+    width: 50px;
+    transition: .4s;
+    font-size: 18px;
+}
+
+#error-footer .designer-and-icon .icon .last{
+    border-right:1px solid #161a1e;
+}
+
+#error-footer .designer-and-icon .icon a i:hover{
+    background: #e4d2b9;
+    border-color: #e4d2b9;
+    color: #444444;
+}
+
+/*===================================================
+                footer part css end
+===================================================*/
+
+
+
+
+
+/*===================================================
+              page-6 error page css end
+===================================================*/
+
+
+
+
